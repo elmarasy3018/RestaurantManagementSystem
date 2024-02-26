@@ -27,8 +27,8 @@ class DatabaseSeeder extends Seeder
             ->create();
 
         $this->call([
-            // ItemSeeder::class,
-            // OrderSeeder::class,
+            ItemSeeder::class,
+            OrderSeeder::class,
             ItemOrderSeeder::class,
             ItemOrderSeeder::class,
             ItemOrderSeeder::class,
