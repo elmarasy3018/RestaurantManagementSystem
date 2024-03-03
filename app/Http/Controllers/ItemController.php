@@ -13,7 +13,8 @@ class ItemController extends Controller
      */
     public function index()
     {
-        return Item::paginate(15);
+        $items = Item::paginate(15);
+        return view('items.index', compact('items'));
     }
 
     /**
