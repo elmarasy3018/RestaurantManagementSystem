@@ -13,7 +13,8 @@ class OrderController extends Controller
      */
     public function index()
     {
-        //
+        $orders = Order::with(['items'])->paginate(15);
+        return view('orders.index', compact('orders'));
     }
 
     /**
