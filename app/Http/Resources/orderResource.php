@@ -19,6 +19,7 @@ class orderResource extends JsonResource
             'name' => $this->name,
             'status' => $this->status,
             'address' => $this->address,
+            'items' => itemResource::collection($this->items),
         ];
     }
 }

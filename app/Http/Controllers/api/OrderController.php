@@ -14,7 +14,7 @@ class OrderController extends Controller
 
     public function index()
     {
-        return new orderCollection(order::paginate(5));
+        return new orderCollection(order::with('items')->paginate(5));
     }
 
 
