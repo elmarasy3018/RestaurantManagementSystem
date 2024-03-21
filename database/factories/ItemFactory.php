@@ -26,7 +26,7 @@ class ItemFactory extends Factory
                 "Desserts",
                 "Beverages"
             ]),
-            'price' => $this->faker->numberBetween(1, 500),
+            'price' => $this->faker->numberBetween(1, 200),
         ];
     }
 }
